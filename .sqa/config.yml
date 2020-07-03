@@ -1,0 +1,14 @@
+config:
+  project_repos:
+    javapoet:
+      repo: 'https://github.com/davrodgon/javapoet.git'
+      branch: sqa
+
+sqa_criteria:
+  qc_style:
+    repos:
+      javapoet:
+        container: javapoet-testing
+        commands:
+           - mvn -f /javapoet-testing/pom.xml checkstyle:checkstyle
+

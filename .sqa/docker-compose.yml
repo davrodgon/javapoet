@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  dispel4py-testing:
+    image: "indigodatacloud/ci-images:java"
+    hostname: "javapoet-testing"
+    volumes:
+     - type: bind
+       source: ./javapoet
+       target: /javapoet-testing
+
